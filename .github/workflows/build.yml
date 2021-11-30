@@ -70,7 +70,7 @@ jobs:
   build-and-publish:
     needs:
       - build
-    uses: opentdf/backend/.github/workflows/publish.yaml@main
+    uses: opentdf/backend/.github/workflows/publish.yaml@feature/mor-argo
     secrets:
       MARS_AWS_ACCESS_KEY_ID: ${{ secrets.MARS_AWS_ACCESS_KEY_ID }}
       MARS_AWS_SECRET_ACCESS_KEY: ${{ secrets.MARS_AWS_SECRET_ACCESS_KEY }}
